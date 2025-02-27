@@ -27,12 +27,16 @@ body {
 .envelope .envelope__card {
   position: absolute;
   bottom: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 250px;
   height: 200px;
   margin: 0 25px;
   background-color: #f5f6d6;
 }
+
 .envelope .envelope__card.open {
   -webkit-animation: cardJump .5s ease .5s forwards;
   -o-animation: cardJump .5s ease .5s forwards;
@@ -41,11 +45,12 @@ body {
 }
 
 .envelope .enveloper__card-text {
-  padding: 10px 20px;
   font-size: 42px;
   margin: 0;
+  padding: 10px;
   color: black;
   font-family: 'Amatic SC', cursive;
+  text-align: center;
 }
 
 .envelope .envelope__side {
